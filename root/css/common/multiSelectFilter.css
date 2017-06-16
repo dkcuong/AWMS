@@ -1,0 +1,11 @@
+.multiSelectFilter {
+    float: left;
+    border: 1px solid #ddd;
+    background: #f6f6f6;
+    padding: 0px;
+    margin: 1px;
+}
+
+.dataTables_wrapper {
+    width: 100% !important;
+}

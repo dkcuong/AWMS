@@ -1,0 +1,11 @@
+.confirmed {
+    color: #060;
+}
+
+.discrepant {
+    color: #C00;
+}
+
+.red {
+    color: red;
+}

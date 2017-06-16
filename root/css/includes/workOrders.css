@@ -1,0 +1,27 @@
+.laborCheckBoxes, .laborValues {
+    border: none;
+}
+
+.laborValues {
+    text-align: right;
+}
+
+.tableCell {
+    vertical-align: top;
+}
+
+.woDialog table {
+    border-collapse: collapse;
+}
+
+.red {
+    display: inline-block;
+    color: red;
+    font-size: 22px;
+    height: 0px;
+    vertical-align: top;
+}
+
+.headerErrors, .laborErrors, .detailsErrors {
+    color: red;
+}

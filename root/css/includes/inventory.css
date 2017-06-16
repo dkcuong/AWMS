@@ -1,0 +1,196 @@
+/* inventory.css */
+
+@media print {
+    .dontPrint,
+    .forScreen,
+    #printButton {
+        display: none;
+    }
+    .forPagePrint {
+        display: inline-block;
+        border: 1px solid DarkGray;
+        width: 170px;
+        height: 19px;
+    }
+}
+
+@media screen {
+    .forPagePrint {
+        display: none;
+    }
+
+}
+
+.doPrint {
+    display: none;
+    border-collapse: collapse;
+}
+
+#newUOM {
+    width: 2em;
+}
+
+.testOnly,
+#stsDialog,
+#testOrder,
+#changeQty,
+#changeRow,
+.calculated,
+#reasonTitles,
+#splitterForm,
+#addCatDialog,
+#historyDialog,
+#addItemDialog,
+.containerButtons,
+.remainderMessage,
+#splitterForm #oneUOM {
+    display: none;
+}
+
+#printTable,
+#printTable td {
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 3px;
+}
+
+#printTable {
+    width: 80%;
+}
+#printTable td {
+    width: 25%;
+}
+
+.splitterBox {
+    padding: 10px;
+}
+
+.splitterBox span {
+    display: inline-block;
+    padding-bottom: 1em;
+}
+
+.splitCartonsLink {
+    color: blue;
+    cursor: pointer;
+}
+
+.message {
+    color: rgb(20, 70, 146);
+}
+
+.sccLink {
+    color: blue;
+    cursor: pointer;
+}
+
+.required {
+    background: rgb(255, 233, 233);
+    border: solid 1px rgb(221, 153, 153);
+    padding: 2px 1px;
+}
+
+.sccErrors {
+    margin-left: -1px;
+    display: none;
+}
+
+#sccButtons {
+    margin-bottom: 20px;
+}
+
+.rightCol,
+#displayItem,
+#changeQty input {
+    text-align: right;
+}
+
+#changeQty .alignLeft {
+    text-align: left;
+}
+
+#changeQty input,
+#changeQty textarea {
+    margin-left: 10px;
+}
+
+#changeRadios td {
+    padding: 7px 0;
+}
+
+#addButton {
+    margin-left: 0;
+}
+
+#changeQty #new,
+#changeQty #current {
+    background: #f9f9f9;
+    border: 1px #999 solid;
+    padding: 2px 1px;
+}
+
+.noWrap {
+    white-space: nowrap;
+}
+
+#hideSearcher {
+    display: none;
+}
+
+#changeQty td {
+    vertical-align: top;
+}
+
+#changeQty td {
+    height: 25px;
+}
+
+#stsDialog td {
+    padding: 7px;
+}
+
+.list-button {
+    margin: 8px 0;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.selectAll,
+.deselectAll {
+    float: left;
+    background-color: #E0E0E0;
+    padding: 5px 15px;
+    border: 1px solid #7D7C7C;
+    color: black;
+    margin: 5px 0 0 5px;
+}
+
+.warning {
+    color: #f0ad4e;
+}
+
+.success {
+    color: #5cb85c;
+}
+
+.danger {
+    color: #d9534f;
+}
+
+.action-button {
+    display: inline-block;
+    margin: 8px 0;
+    float: left;
+    width: 100%;
+}
+
+.action-button button {
+    float: right;
+    background-color: #E0E0E0;
+    padding: 5px 15px;
+    border: 1px solid #7D7C7C;
+    color: black;
+    margin: 5px 0 0 5px;
+    cursor: pointer;
+}

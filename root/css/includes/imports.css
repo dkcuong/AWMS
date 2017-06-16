@@ -1,0 +1,29 @@
+span {
+    display: inline-block;
+    margin: 2px 0 0 1px;
+}
+
+#title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input {
+    margin: 6px 0;
+}
+
+.importForms {
+    line-height: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+
+input,
+select {
+    margin-bottom: 10px;
+}
+
+form {
+    margin-bottom: 0;
+}

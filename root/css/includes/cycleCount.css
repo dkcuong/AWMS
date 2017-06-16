@@ -1,0 +1,201 @@
+.create-report-cycle-count td {
+    height: 30px;
+    padding: 0 10px;
+}
+
+#create-report-form,
+#searchCycleCount,
+.cycle-detail,
+.cycle-audit {
+    border: 1px solid #eee;
+    overflow: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin: 10px 0;
+    padding: 3px;
+    background: #fcfcff;
+    width: 100%;
+    display: block;
+    float: left;
+}
+
+/*#location-input,*/
+#sku-input,
+#customer-input,
+#warehouse-input {
+    float: right;
+}
+
+#location-input-from,
+#location-input-to {
+    width: 141px;
+}
+
+#location-input-from {
+    margin-bottom: 2px;
+}
+
+#sku-input {
+    resize: none;
+}
+
+.input-disabled {
+    border: 1px solid #000;
+    padding: 5px;
+    color: black;
+    height: 22px;
+    width: 171px;
+}
+
+.no-resize {
+    resize: none;
+}
+
+#warehouse-input,
+#assigned-input {
+    min-width: 173px;
+}
+
+.red,
+.txtRed {
+    color: red;
+}
+
+.list-button #btnAddNewRow,
+.list-button #adjust,
+.list-button #print-pdf,
+.button-action {
+    float: right;
+}
+
+.action-button-top {
+    text-align: right;
+    padding: 10px 0;
+}
+
+.action-button-bottom {
+    text-align: left;
+}
+
+#adjust-url,
+#btnAddNewRow,
+#adjust,
+#print-pdf,
+.button-action,
+#adjust-url-bottom,
+#adjust-bottom,
+#print-pdf-bottom,
+#add-new-SKU {
+    background-color: #E0E0E0;
+    padding: 5px 15px;
+    border: 1px solid #7D7C7C;
+    color: black;
+    margin: 5px 0 0 5px;
+}
+
+#cycleCount_wrapper .dataTables_scroll .dynamicDT .sorting,
+#cycleCountDetail_wrapper .dataTables_scroll .dynamicDT .sorting,
+#cycleCountDetailNonSizeColor_wrapper .dataTables_scroll .dynamicDT .sorting,
+#cycleCountAudit_wrapper .dataTables_scroll .dynamicDT .sorting,
+#cycleCountAuditNonSizeColor_wrapper .dataTables_scroll .dynamicDT .sorting {
+    text-align: left;
+    padding-left: 10px;
+}
+
+#assigned-to {
+    width: 183px;
+    height: 34px;
+    color: black;
+    background-color: rgb(235, 235, 228);
+    border: 1px solid black;
+}
+
+.list-button {
+    margin: 8px 0;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.cycle-detail .display_by_input {
+    float: left;
+}
+
+.cycle-detail .display_by_label {
+    float: left;
+    line-height: 2;
+    margin-left: 5px;
+}
+
+.selectAll,
+.deselectAll {
+    float: left;
+}
+
+select[name="vendorName"],
+#act_qty,
+#pack_size {
+    min-width: 182px;
+}
+
+#customer-input {
+    min-width: 175px;
+}
+
+#addRowNotice {
+    color: red;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #AAAAAA;
+    padding-bottom: 10px;
+}
+
+#overflow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 31px;
+    opacity: 0;
+}
+
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all{
+    overflow: visible;
+}
+
+.successMessage.centered {
+    display: inline-block;
+}
+
+.create-report-cycle-count td {
+    min-width: 100px;
+}
+
+#create-report-button,
+.action-button {
+    text-align: right;
+}
+
+.page-title {
+    text-align: center;
+    margin: 5px 0;
+}
+
+#search-sku-input {
+    background: #fff url(../../images/close-icon.gif) no-repeat right -10px center;
+    border: 1px solid #999;
+    padding: 3px 18px 3px 4px;
+    transition: background 0.2s;
+}
+
+#search-sku-input.x {
+    background-position: right 5px center;
+}
+
+#search-sku-input.onX {
+    cursor: pointer;
+}
+
+#search-sku-input::-ms-clear {
+    display: none;
+    width:0;
+    height:0;
+}

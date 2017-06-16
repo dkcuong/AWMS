@@ -1,0 +1,160 @@
+html,
+body {
+    /*overflow: hidden;*/
+    overflow-x: hidden;
+}
+
+html,
+body,
+table {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+}
+
+iframe {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+}
+
+#headerImage,
+body table #headerImage td {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+#headerImage {
+    height: 148px;
+}
+
+td {
+    vertical-align: top;
+}
+
+.mobileMenuCell {
+    padding-top: 5px; 
+    padding-bottom: 5px;
+}
+
+table,
+iframe,
+#frameCell {
+    width: 100%;
+}
+
+#frameCell {
+    height: 100%;
+    padding-bottom: 30px;
+}
+
+#titleCell {
+    color: white;
+    background: rgb(53, 77, 113); 
+    padding: 5px;
+    font-weight: bold;
+}
+
+.ui-widget-content .activeLink {
+    border: 1px solid #ccc;
+    background: #eee;
+    color: rgb(20, 70, 146);
+    padding: 0 3px;
+    margin-left: -4px;
+}
+
+#accordion a {
+    line-height: 1.5em;
+}
+
+#dashNotice {
+    font-size: 18px;
+    border: 2px solid #ccc;
+    position: absolute;
+    width: 500px;
+    text-align: center;
+    padding: 10px;
+    top: -100px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+}
+
+fieldset.geniusPack{
+    margin-top: 10% !important;
+}
+
+#accordion .redLink {
+    color: #b00;
+}
+
+#onlyOnScanner {
+    display: inline-block;
+    background:
+        url(/mvc/wms/index/custom/images/header.png) no-repeat -95px -30px;
+    height: 90px;
+    line-height: 90px;
+    vertical-align: middle;
+    width: 190px;
+    color: rgb(53, 77, 113);
+    margin-top: 8px;
+}
+
+#pageTitle {
+    display: inline-block;
+    height: 90px;
+    width: 235px;
+    vertical-align: middle;
+    background: rgb(53, 77, 113);
+    margin-top: 8px;
+}
+
+#scannerMenu {
+    padding: 110px 20px 10px;
+    border: 1px solid #bbb;
+    background-color: #F3F4F6;
+    line-height: 2.25em;
+}
+
+.mobileMenuLink {
+    font-size: 19px;
+    color: #666;
+}
+
+
+#scannerTitleContainer {
+    position: absolute;
+    padding-left: 19px;
+    width: 100%;
+}
+
+#mobileTitle {
+    position: absolute;
+    left: 220px;
+    top: 38px;
+    color: white;
+    font-size: 20px;
+}
+
+#new-feature {
+    display: none;
+}
+
+#userInfo {
+    color: #ffffff;
+    font-weight: bold;
+    top: 63px;
+    position: relative;
+    float: right;
+    right: 20px;
+    text-transform: uppercase;
+}
+
+#userInfo a {
+    color: #ffffff;
+}

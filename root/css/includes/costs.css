@@ -1,0 +1,9 @@
+.infoBlock{
+    border: 1px solid #eee;
+    overflow: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin: 10px 0;
+    padding: 3px;
+    background: #fcfcff;
+}

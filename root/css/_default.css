@@ -1,0 +1,106 @@
+#addTable {
+    margin-bottom: 15px;
+}
+
+#plural {
+    display: none;
+}
+
+table td#createBox {
+    display: table-cell;    
+}
+
+.successMessage {
+    display: none;
+    white-space: nowrap;
+}
+
+.showsuccessMessage {
+    padding: 2px 5px;
+    display: inline-block;
+    margin: 5px 0;
+    border: 1px #9d9 solid;
+    background: #e9ffe9;    
+}
+
+.showFailedMessage {
+    padding: 2px 5px;
+    display: inline-block;
+    margin: 5px 0;
+    border: 1px #d99 solid;
+    background: #ffe9e9;    
+}
+
+.dynamicDT td,
+.dynamicDT th {
+    white-space: nowrap;
+}
+
+td#titleCell {
+    height: 20px;
+}
+
+td#frameCell,
+iframe#mainDisplay {
+    height: 100%;
+}
+
+.centered {
+    text-align: center;
+}
+
+table td.numberCell {
+    text-align: right;
+}
+
+td.canEdit {
+    color: rgb(75, 109, 160);
+}
+
+#btnToggleAccordion {    
+    width: 18px;
+    margin: 10px auto 20px auto;
+    display: block;
+    cursor: pointer;
+    border: 0px; 
+    background-color: #fff;
+}
+
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.alert-error {
+    color: #763c3d;
+    background-color: #f0dfd8;
+    border-color: #e9d6c6;
+}
+
+.alert {
+    padding: 5px;
+    border: 1px solid transparent;    
+    clear: both;
+}
+
+.alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+
+#alertMessages {
+    display: block;    
+    margin: .5em 0;
+    width: inherit;
+}
+
+#warningMessage {
+    display: inline-block;
+    font-size: 14px;
+    color: #9F6000;
+    background-color: #FEEFB3;
+    padding: 2px 5px;
+    border: 1px #DEB67A solid;
+}

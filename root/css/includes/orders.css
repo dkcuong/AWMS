@@ -1,0 +1,323 @@
+@media screen {
+
+    .printOnly {
+        display: none;
+    }
+
+    .productTable td:last-child,
+    .productTable td:nth-last-child(2) {
+        display: none
+    }
+
+    .productTable {
+        table-layout: fixed;
+        width: 99%;
+    }
+
+    .productTable td {
+        overflow: hidden;
+    }
+}
+
+#addOrders {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 970px;
+}
+
+#orderForm td {
+    padding-left: 3px;
+    padding-bottom: 3px;
+    height: 22px;
+    valign: middle;
+}
+
+td.ecoCol {
+    background-color: #FAFAFA;
+}
+
+td.standardColumn, td.picklistColumn {
+    background-color: #E6E6E6;
+}
+
+.pickingTable, #orderForm table {
+    display: inline-table;
+    margin: 6px;
+    border-collapse: collapse;
+    vertical-align: top;
+}
+
+#searcherTable {
+    margin: 0px;
+}
+
+button {
+    margin: 3px;
+}
+
+#mandarotyNote {
+    font-size: 23px;
+}
+
+.red {
+    display: inline-block;
+    color: red;
+    font-size: 22px;
+    height: 0px;
+    vertical-align: top;
+}
+
+table.orderStatus {
+    margin-top: 1em;
+    background-color: #fff;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+table td.orderStatus {
+    text-align: center;
+    padding: 0.5em;
+    width: 150px;
+    border: 2px solid #666;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-box-shadow: 3px 3px 5px black, 3px 3px 5px black;
+    -webkit-box-shadow: 3px 3px 5px black, 3px 3px 5px black;
+}
+
+#blue {
+    color: blue;
+}
+#orange {
+    color: orange;
+}
+#green {
+    color: green;
+}
+#red {
+    color: red;
+}
+
+.addRemoveDescription, .addRemoveSkuLocation {
+   border: 1px outset black;
+   background-color: #DCDCDC;
+   height: 20px;
+   width: 20px;
+   cursor: pointer;
+}
+
+.addRemoveDescription:hover, .addRemoveSkuLocation:hover {
+   background-color: #A9A9A9;
+   color: white;
+}
+
+td.addRemove,
+td.center,
+.centered {
+    text-align: center;
+}
+
+td input[type=text] {
+    width: 96%;
+}
+
+td input[type=text]:not(.cycleCountReportName):not(.cycleCountDueDate) {
+    display: table-cell;
+}
+
+.productTable tr.oddRows,
+.pickingTable tr.oddRows,
+.productTable tr.oddRows input[type=text] {
+    background-color: #f3f3f3;
+}
+
+th,
+.totalCartons,
+.totalPieces,
+.extraInfo {
+    font-size: 11pt;
+}
+
+button.noPrint {
+    margin-right: 10px;
+}
+
+.missField {
+    color: red;
+}
+
+#orderImport, #orderCategoryDiv, #truckOrderImport, #truckOrderImportResults, #orderImportResults {
+    margin: 6px;
+}
+
+#truckOrderData {
+    border: 1px solid black;
+    margin: 6px;
+    padding: 5px;
+}
+
+#datatableTitle {
+    text-align: center;
+    margin: 0px;
+}
+
+a.note {
+ color: blue;
+}
+
+.labor {
+    text-align: right;
+}
+
+#orderQuantity {
+    width: 150px;
+}
+
+.orderData {
+    padding: 10px;
+    border: 2px solid #666;
+}
+
+.orderCount {
+    width: 100px;
+}
+
+.orderNumber {
+    padding: 5px;
+    border: 2px solid #666;
+}
+
+.pickingTable {
+    table-layout: fixed;
+}
+
+.pickingAddRemoveCell {
+    width: 26px;
+}
+
+.pickingSizeCell {
+    width: 80px;
+}
+
+.pickingSize {
+    width: 76px;
+}
+
+.pickingColorCell {
+    width: 80px;
+}
+
+.pickingColor {
+    width: 76px;
+}
+
+.pickingUPCCell {
+    width: 100px;
+}
+
+.pickingUPC {
+    width: 96px;
+}
+
+.pickingPieceQuantityCell {
+    width: 70px;
+    text-align: center;
+}
+
+.pickingPrimeLocationCell {
+    width: 100px;
+}
+
+.pickingPiecesPickedCell {
+    width: 80px;
+    text-align: center;
+}
+
+.pickingPiecesPicked {
+    width: 76px;
+}
+
+.pickingActualLocationCell {
+    width: 120px;
+}
+
+.pickingActualLocation {
+    width: 118px;
+}
+
+.pickingSKU {
+    width: 98%;
+}
+
+.pickingResultTable,
+.pickedUccLabels,
+.pickedUccs,
+.pickedSplitLabels,
+.pickedSplitUccs,
+.noSplitLabels,
+.cycleCountAssignedToCell,
+.cycleCountReportNameCell,
+.cycleCountDueDateCell,
+.cycleCountAssignedTo,
+.cycleCountReportName,
+.cycleCountDueDate,
+#orderCartonsDialog {
+    display: none;
+}
+
+.noSplitLabels {
+    color: gray;
+}
+
+.orderDetails {
+    cursor: pointer;
+    color: blue;
+}
+
+.noWrap {
+    white-space: nowrap;
+}
+
+.updateCartonMessages {
+    padding: 5px 15px;
+    line-height: 2em;
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.updateCartonMessages button {
+    margin: 7px 0 0;
+}
+
+.msgError {
+    color: red;
+}
+
+.success {
+    color: #090;
+    font-size: 1.85em;
+}
+
+.availableInventory {
+    background-color: #f3f396 !important;
+}
+
+.redColor {
+    color: red;
+}
+
+.fifthMarked {
+    border-bottom: 2px solid black;
+}
+
+.printPickedUCCLabels {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: blue;
+}
+
+.printPickedUCCLabels.disabled {
+    color: gray;
+    cursor: default;
+}

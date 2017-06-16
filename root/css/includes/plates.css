@@ -1,0 +1,119 @@
+@media screen {    
+    .printOnly {
+        display: none;
+    }
+}
+
+@media print { 
+    
+    .dontPrint,
+    #sheetPage,
+    #printButton {
+        display: none; 
+    } 
+    
+    .printDisplay {
+        margin: 0 5px 5px 0;
+        padding: 5px;
+        font-weight: bold;
+        border: 1px solid black;
+        font-size: 22px;
+    }
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+    .palletSheet {
+        margin-top: 10px;
+        height: 85%;
+    }
+
+    .printOnly {
+        display: inline-block;
+    }
+
+
+}
+
+@page { 
+    size: landscape; 
+}
+
+/*Page break after each pallet tally sheet*/
+html div.sheetCopies {
+    page-break-after: always;
+}
+
+#sheetPage .printDisplay {
+    display: none;
+}
+
+.palletSheet {
+    width: 100%;
+}
+
+.palletSheet,
+.palletSheet td,
+.palletSheet th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.palletSheet td,
+.palletSheet th {
+    padding: 4px;
+    height: 15px;
+}
+
+#locationDisplay {
+    display: inline-block;
+    border: none;
+}
+
+
+.palletSheet .widthThree {
+    font-size: 10px;
+    width: 15%;
+}
+.palletSheet .widthTwo {
+    font-size: 10px;
+    width: 10%;
+}
+.palletSheet .widthOne{
+    font-size: 10px;
+    width: 5%;
+}
+.palletSheet .widthHalf {
+    font-size: 8px;
+    width: 3%;
+}
+.palletSheet .widthQuarter {
+    font-size: 6px;
+    width: 1.5%;
+}
+
+.rowCount th {
+    font-size: 2px;
+}
+
+#palletNumber {
+    font-size: 8px;
+    width: 30px;
+}
+
+.miniTable,
+.miniTable th {
+    padding: 2px;
+    font-size: 8px;
+}
+
+.palletSheet th.rowCount {
+    width: 1%;
+    font-size: 8px;
+}
+.palletSheet td.rowCount {
+    text-align: right;
+}

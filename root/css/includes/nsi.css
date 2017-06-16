@@ -1,0 +1,22 @@
+.containerInput {
+    width: 5em;
+}
+
+.buttonSpan input[type=text] {
+    width: 2em;
+}
+
+.buttonSpan {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 3px 5px;
+    background: #fcfcfc;
+}
+
+th {
+    white-space: nowrap;
+}
+
+table.dataTable td input {
+    width: 100%;
+}

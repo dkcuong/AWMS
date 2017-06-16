@@ -1,0 +1,55 @@
+@media print {
+    #movements td {
+        vertical-align: top;
+    }
+    
+    .dontPrint {
+        display: none;
+    }
+}
+
+@media screen {
+    #movements {
+        display: none;
+    }
+}
+
+#locsSaved,
+#movements {
+    text-align: center;
+}
+
+#movements {
+    width: 100%;
+}
+
+#locsSaved td {
+    width: 200px;
+}
+
+#locsSaved,
+#movements,
+#locsSaved td,
+#movements td {
+    border: 1px solid #999;
+    border-collapse: collapse;
+    padding: 3px 20px;
+}
+
+.consolidateHidden {
+    display: none;    
+    margin: 5px;
+}
+
+#selectMessage {
+    margin: 6px;    
+}
+
+.waveMessage {
+    margin-left: 5px;
+}
+.waveTitle {
+    margin: 5px 6px 3px 6px;
+    font-size: 12px;
+    font-weight: bold;   
+}

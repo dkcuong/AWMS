@@ -1,0 +1,26 @@
+.inputBlock {
+    border: 1px solid #eee;
+    overflow: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 3px;
+    background: #fcfcff;
+    margin-bottom: 5px;
+}
+
+.inputBlockSubmit {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    margin: 4px ;
+    padding: 2px 6px 3px;
+    border: 2px outset buttonface;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    background-color: buttonface;
+    box-sizing: border-box;
+}

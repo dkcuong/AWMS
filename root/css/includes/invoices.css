@@ -1,0 +1,233 @@
+/* invoices css */
+
+.orderFilter {
+    float: left;
+    border: 1px solid #ddd;
+    background: #f6f6f6;
+    padding: 0px;
+    margin: 1px;
+}
+
+.inputBlock {
+    border: 1px solid #eee;
+    overflow: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 3px;
+    background: #fcfcff;
+    margin-bottom: 5px;
+}
+
+.inputBlockSubmit {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    margin: 4px ;
+    padding: 2px 6px 3px;
+    border: 2px outset buttonface;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    background-color: buttonface;
+    box-sizing: border-box;
+}
+
+#statusType , #vendor , #month {
+    margin-top : 10px;
+    margin-left : 5px;
+    margin-right : 20px;
+}
+
+#submitInvoice , #updateInvoicePaid {
+    margin-top : 10px;
+}
+
+.pageTitle {
+    margin: 0;
+    text-align: right;
+}
+
+.datepicker {
+    width: 6em;
+}
+
+.printButton {
+    float: right;
+}
+
+.clientDetails {
+    border-collapse: collapse;
+}
+
+.clientDetails tr td:last-child {
+    border: 1px solid black;
+}
+
+.clientDetails th {
+    text-align: left;
+}
+
+#titleTable {
+    width: 100%;
+    margin: 5px;
+    vertical-align: middle;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    padding: 5px 5px;
+}
+
+#titleTable tr.caption {
+    font-weight: bold;
+    text-align: center;
+}
+
+#titleTable tr {
+    border-bottom: 1px solid #000;
+}
+
+#titleTable tr.body {
+    display: table-row;
+    background-color: white;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+#titleTable td {
+    border-left: none;
+    border-right: none;
+    height: 35px;
+}
+
+#summaryTable td {
+    padding: 0px 5px;
+}
+
+
+#summaryTable tr:last-child td {
+    font-weight: bold;
+}
+
+.infoBlock{
+    border: 1px solid #eee;
+    overflow: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin: 10px 0;
+    padding: 3px;
+    background: #fcfcff;
+}
+
+.customFilter {
+    margin: 4px 4px 4px 0;
+    padding: 10px;
+    background: #fcfcfc;
+    border: 1px #ccc solid;
+    display: inline-block;
+}
+
+.withCheckboxes {
+    position: relative;
+    top: 2px;
+}
+
+td.detailsControl {
+    background: url('../../../extra/images/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+
+tr.shown td.detailsControl {
+    background: url('../../../extra/images/details_close.png') no-repeat center center;
+}
+
+.expandRow {
+    margin-left: 50px;
+    width: 100%;
+}
+
+.invRadios,
+.invChecks,
+.detailsControl {
+    width: 1px;
+}
+
+#profileDialog .red, .clientDetails .red {
+    display: inline-block;
+    color: red;
+    font-size: 22px;
+    height: 0px;
+    vertical-align: top;
+}
+
+#profileDialog .updateInfoCell {
+    text-align: center;
+}
+
+#profileDialog .infoBlock{
+    border: 1px solid #eee;
+    overflow: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin: 10px 0;
+    padding: 3px;
+    background: #fcfcff;
+}
+
+#profileDialog #customerInfo {
+    border: 1px solid #ccc;
+    background: #fcfcfc;
+    padding: 15px;
+}
+
+#profileDialog .inlineBlock {
+    display: inline-block;
+}
+
+#invCats,
+#profileDialog,
+#profilesVendors {
+    display: none;
+}
+
+.cancelButton, .paymentButton, .payment {
+    margin-left: 5px;
+}
+
+.payButtonCell {
+    text-align: center;
+}
+
+#profileDialog a:link {
+  background-color:aliceblue;
+}
+
+.clientDetails td {
+    padding-right: 5px;
+}
+
+.alignRight {
+    text-align: right;
+}
+
+.clientDetails input[type="text"] {
+    width: 100%;
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+#titleTable tr td {
+    text-align: center;
+}
+
+#invoiceCCs .rcvDetail, .ordDetail{
+    border: none;
+    font-size: 12px;
+    color: blue;
+}
+
+#details .cancel, .highlight {
+    color: red;
+}

@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#displayDashboard {
+    padding: 8px;
+}
+
+.blinkRow {
+  background-color: #f33;
+}
+
+.alarmDate {
+  color: #c66;
+}
+
+.rush {
+  background-color: #c66;
+  color: #900;
+}
+
+.complete {
+  background-color: #6c6;
+  color: #090;
+  text-align: center;
+}
+
+.incomplete {
+  text-align: center;
+}
+
+.blinkRow_alarmDate {
+  color: #933;
+}
+
+.blinkRow_rush {
+  background-color: #933;
+  color: #600;
+}
+
+.blinkRow_complete {
+  background-color: #393;
+  color: #060;
+  text-align: center;
+}
+
+#filterContainer {
+    border: 1px solid #eee;
+    overflow: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 3px;
+    background: #fcfcff;
+    margin-top: -8px;    
+    margin-bottom: 5px;
+}
+
+#statusDisplay {
+    margin: 8px 8px 8px 0;
+    display: inline-block;
+}
+
+#statusTableTitle {
+    font-weight: bold;
+}
+
+.orderFilter {
+    float: left;
+    border: 1px solid #ddd;
+    background: #f6f6f6;
+    padding: 0px;
+    margin: 1px;
+}
+
+#dashboardSelections table {
+    width: 500px;
+    border: 1px solid #999;
+    display: block;
+    margin: 5px;
+    padding: 3px;
+}
+
+.titles {
+    font-weight: bold;
+}
+
+#smartTVDashboard {
+    width: 100%;
+    margin: 5px;
+    vertical-align: middle;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    padding: 5px 5px;
+}
+
+#smartTVDashboard tr.caption {
+    font-weight: bold;
+    text-align: center;
+}
+
+#smartTVDashboard tr {
+    border-bottom: 1px solid #000;
+}
+
+#smartTVDashboard tr.even {
+    display: table-row;
+    background-color: white;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+#smartTVDashboard tr.odd {
+    display: table-row;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+#smartTVDashboard td {
+    border-left: none;
+    border-right: none;
+    height: 35px;
+}
+
+#smartTVDashboard td.statusCell {
+    width: 110px;
+    text-align: center;
+}
+
+#smartTVDashboard td.orderNumberCell {
+    width: 85px;
+    text-align: center;
+}
+
+#smartTVDashboard td.dateCell {
+    width: 80px;
+    text-align: center;
+}
+
+#smartTVDashboard td.quantityCell {
+    width: 75px;
+    text-align: center;
+}
+
+#smartTVDashboard td.rushCell {
+    width: 65px;
+    text-align: center;
+}
+
+.settings {
+    margin: 5px;
+    width: 50px;
+}
+
+.cancelledOrder td {
+    background: #666;    
+    color: black;
+}

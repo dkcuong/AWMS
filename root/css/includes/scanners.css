@@ -1,0 +1,324 @@
+table {
+    margin: 0 auto;
+}
+
+#scanner {
+    margin: 0 auto;
+
+
+    margin-top: 25px;
+    padding: 5px;
+    border: 1px solid #bbb;
+
+    /*Old browsers*/
+    background: #f6f8f9;
+    background: -moz-linear-gradient(top, #f6f8f9 0%, #e3e3e3 75%);
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        color-stop(0%,#f6f8f9), color-stop(75%,#e3e3e3));
+    background: -webkit-linear-gradient(top, #f6f8f9 0%,#e3e3e3 75%);
+    background: -o-linear-gradient(top, #f6f8f9 0%,#e3e3e3 75%);
+    background: -ms-linear-gradient(top, #f6f8f9 0%,#e3e3e3 75%);
+    background: linear-gradient(to bottom, #f6f8f9 0%,#e3e3e3 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(
+        startColorstr='#f6f8f9', endColorstr='#e3e3e3',GradientType=0
+    );
+
+    box-shadow: 7px 7px 5px #888888;
+}
+
+#confirm {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 25px;
+
+    /* Old browsers*/
+    background: #fff7d8;
+    background: -moz-linear-gradient(top, #fff7d8 0%, #fff2ba  75%);
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        color-stop(0%,#fff7d8), color-stop(75%,#fff2ba ));
+    background: -webkit-linear-gradient(top, #fff7d8 0%,#fff2ba  75%);
+    background: -o-linear-gradient(top, #fff7d8 0%,#fff2ba  75%);
+    background: -ms-linear-gradient(top, #fff7d8 0%,#fff2ba  75%);
+    background: linear-gradient(to bottom, #fff7d8 0%,#fff2ba  75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(
+        startColorstr='#fff7d8', endColorstr='#fff2ba ',GradientType=0
+    );
+
+    box-shadow: 7px 7px 5px #888888;
+    white-space: nowrap;
+}
+
+#rejected {
+    margin: 0 auto;
+    margin-top: 25px;
+
+    /* Old browsers*/
+    background: #ffd8d8;
+    background: -moz-linear-gradient(top, #ffd8d8 0%, #ffbaba  75%);
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        color-stop(0%,#ffd8d8), color-stop(75%,#ffbaba ));
+    background: -webkit-linear-gradient(top, #ffd8d8 0%,#ffbaba  75%);
+    background: -o-linear-gradient(top, #ffd8d8 0%,#ffbaba  75%);
+    background: -ms-linear-gradient(top, #ffd8d8 0%,#ffbaba  75%);
+    background: linear-gradient(to bottom, #ffd8d8 0%,#ffbaba  75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(
+        startColorstr='#ffd8d8', endColorstr='#ffbaba ',GradientType=0
+    );
+
+    box-shadow: 7px 7px 5px #888888;
+}
+
+#approved {
+    margin: 0 auto;
+    margin-top: 25px;
+
+    /* Old browsers*/
+    background: #e9ffe9;
+    background: -moz-linear-gradient(top, #e9ffe9 0%, #cfc  75%);
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        color-stop(0%,#e9ffe9), color-stop(75%,#cfc ));
+    background: -webkit-linear-gradient(top, #e9ffe9 0%,#cfc  75%);
+    background: -o-linear-gradient(top, #e9ffe9 0%,#cfc  75%);
+    background: -ms-linear-gradient(top, #e9ffe9 0%,#cfc  75%);
+    background: linear-gradient(to bottom, #e9ffe9 0%,#cfc  75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(
+        startColorstr='#e9ffe9', endColorstr='#cfc ',GradientType=0
+    );
+
+    box-shadow: 7px 7px 5px #888888;
+}
+
+#approved,
+#approved td {
+    border: 1px solid rgb(150,200,150);
+}
+
+#approved td {
+    padding: 5px;
+    color: #070;
+    line-height: 1.35em;
+}
+
+#rejected,
+#rejected td {
+    border: 1px solid rgb(200,150,150);
+}
+
+#rejected td {
+    padding: 5px;
+    color: #700;
+    line-height: 1.35em;
+}
+
+#confirm,
+#confirm td {
+    border: 1px solid rgb(225,190,49);
+}
+
+#confirm td {
+    padding: 5px;
+    color: rgb(174,143,0);
+    line-height: 1.35em;
+}
+
+#scanner td {
+    padding: 5px 0 0;
+}
+
+#scanner textarea {
+    margin: 0;
+    width: 96%;
+}
+
+
+#scanner #instructions {
+    border: 1px solid #bbb;
+    padding: 5px;
+    color: #666;
+    line-height: 1.35em;
+}
+
+#onlyOnScanner {
+    display: inline-block;
+    background:
+        url(/mvc/wms/index/custom/images/header.png) no-repeat -95px -30px;
+    height: 90px;
+    line-height: 90px;
+    vertical-align: middle;
+    width: 190px;
+    color: rgb(53, 77, 113);
+}
+
+#pageTitle {
+    display: inline-block;
+    height: 90px;
+    line-height: 90px;
+    width: 235px;
+    color: white;
+    vertical-align: middle;
+    font-size: 16px;
+    background: rgb(53, 77, 113);
+    font-weight: bold;
+    word-wrap:break-word;
+}
+
+@media screen and (max-width: 640px) {
+    #confirm {
+        width: 100%;
+    }
+
+    #approved, #rejected {
+        font-size: 9px;
+    }
+
+    input[name = 'quantity'] {
+        width: 100%;
+    }
+}
+
+#goBackTable a {
+    color: blue;
+}
+
+#goBackTable {
+    margin-top: 30px;
+    width: 190px;
+}
+
+#backLink {
+    padding-left: 5px;
+}
+
+#signOutLink {
+    text-align: right;
+}
+
+#licensePlate,
+#licensePlate td {
+    border: 1px solid #000000;
+}
+
+#licensePlate {
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+#licensePlate td {
+    padding: 5px;
+    color: #000;
+    line-height: 1.35em;
+}
+
+.transferMezzanine {
+    border: 1px solid #eee;
+    overflow: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin: 10px 0;
+    padding: 3px;
+    background: #fcfcff;
+}
+
+.successMessage {
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+}
+
+.formatFile {
+    color: #cc0000;
+    font-weight: bold
+}
+
+.titleTable {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.headerTable {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#numberIndex {
+    text-align: center;
+}
+
+.descriptionTable {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: none;
+}
+
+.descriptionHideShowCell {
+    width: 15px;
+}
+
+#descriptionTable tr td {
+    vertical-align: top;
+}
+
+.trackingID {
+    margin: 0px 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px 5px;
+}
+
+.trackingUCCs {
+    margin: 0px;
+}
+
+.shipped {
+    color: green;
+}
+
+.addRemoveDescription {
+    color: blue;
+    background-color: transparent;
+    border: none;
+    margin: auto;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#descriptionType {
+    display: none;
+}
+
+.currentTracking {
+    border: 1px solid #bbb;
+    background-color: #F4F5F6;
+}
+
+#downloadCarton {
+    text-align: center;
+}
+
+#download-excel {
+    text-align: right;
+}
+
+#download-excel a {
+    -webkit-appearance: button;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    padding: 5px;
+}
+
+#confirm tr.old {
+    /*border: 1px solid rgb(255, 251, 234);*/
+    background: #fffbea;
+}
+
+.bolOrder {
+    float: right;
+}

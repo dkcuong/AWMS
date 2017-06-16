@@ -1,0 +1,207 @@
+-- phpMyAdmin SQL Dump
+-- version 4.2.7.1
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jan 02, 2015 at 11:53 AM
+-- Server version: 5.6.20
+-- PHP Version: 5.5.15
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `thanhco_seldat`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `refs`
+--
+
+CREATE TABLE IF NOT EXISTS `refs` (
+`id` int(8) NOT NULL,
+  `ref` varchar(50) NOT NULL,
+  `work` varchar(50) NOT NULL,
+  `inputName` varchar(10) NOT NULL,
+  `prefix` varchar(4) NOT NULL,
+  `Active` tinyint(4) DEFAULT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=143 ;
+
+--
+-- Dumping data for table `refs`
+--
+
+INSERT INTO `refs` (`id`, `ref`, `work`, `inputName`, `prefix`, `Active`) VALUES
+(1, 'REC-UNITS', 'RECEIVE UNITS', 'recUnits', 'rec', 1),
+(2, 'REC-CARTCLOS', 'RECEIVE CARTON', 'recCC', 'rec', 1),
+(3, 'REC-CARTS-VOL', 'RECEIVE CARTON VOLUME', 'recCV', 'rec', 1),
+(4, 'REC-FREIGHT', 'RECEIVING FREIGHT', 'recFreight', 'rec', 1),
+(5, 'REC-FREIGHT-PIER', 'RECEIVING FREIGHT PIER TOLL', 'recFP', 'rec', 1),
+(6, 'REC-VAT-TAX', 'RECEIVING VAT TAXES', 'recVT', 'rec', 1),
+(7, 'REC-DUTY-TAX', 'RECEIVING DUTY TAXES', 'recDT', 'rec', 1),
+(8, 'REC-BROKERAGE-FEE', 'RECEIVING BROKERAGE FEE', 'recBF', 'rec', 1),
+(9, 'REC-RUSH', 'RECEIVING RUSH', 'recRush', 'rec', 1),
+(10, 'REC-SPC', 'RECEIVING SPECIAL', 'recSpec', 'rec', 1),
+(11, 'PIC-PALLET', 'PALLET PICK', '', '', 0),
+(12, 'PIC-CARTON', 'CARTON PICK', '', '', 0),
+(13, 'PIC-RTN', 'CARTON RETURN', '', '', 0),
+(14, 'PIC-EACHSGL', 'PICK SINGLE SKU', '', '', 0),
+(15, 'HDL-PROC', 'UNIT PROCESSED', '', '', 0),
+(16, 'HDL-HANG-ADD&RMV', 'HANG & RMV GARMENT', '', '', 0),
+(17, 'HDL-GARHANG', 'HANG GARMENT', '', '', 0),
+(18, 'HDL-GAR-HANG-RMV', 'HANG REMOVED GARMENT', '', '', 0),
+(19, 'HDL-SIZER-ADD&RMV', 'ADD & REMOVED SIZER', '', '', 0),
+(20, 'HDL-SIZER-ADD', 'ADD SIZER', '', '', 0),
+(21, 'HDL-SIZER-RMV', 'REMOVED SIZER', '', '', 0),
+(22, 'HDL-PRICE-STK-ADD&RMV', 'REMOVE & APPLY STICKER', '', '', 0),
+(23, 'HDL-PRICE-STK-ADD', 'APPLY STICKER', '', '', 0),
+(24, 'HDL-PRICE-STK-RMV', 'REMOVE STICKER', '', '', 0),
+(25, 'HDL-PRICE-TKT-ADD&RMV', 'REMOVE & APPLY PRICE TAG', '', '', 0),
+(26, 'HDL-PRICE-TKT-ADD', 'APPLY PRICE TAG', '', '', 0),
+(27, 'HDL-PRICE-TKT-RMV', 'REMOVE PRICE TAG', '', '', 0),
+(28, 'HDL-PRICE-TKT-BC-ADD&RMV', 'REMOVE & APPLY PRICE TAG BY C/S/T', '', '', 0),
+(29, 'HDL-PRICE-TKT-BC-ADD', 'APPLY PRICE TAG BY C/S/T', '', '', 0),
+(30, 'HDL-PRICE-TKT-BC-RMV', 'REMOVE PRICE TAG BY C/S/T', '', '', 0),
+(31, 'HDL-BAG-ADD&RMV', 'REMOVE & APPLY BAG', '', '', 0),
+(32, 'HDL-BAG-ADD', 'APPLY BAG', '', '', 0),
+(33, 'HDL-BAG-RMV', 'REMOVE BAG', '', '', 0),
+(34, 'APPLY TAPE', 'APPLY TAPE', '', '', 0),
+(35, 'HDL-RUB-ADD', 'APPLY RUBBER', '', '', 0),
+(36, 'HDL-RUB-RMV', 'REMOVE RUBBER', '', '', 0),
+(37, 'HDL-GARFOLD& TAPE', 'HDL-GARFOLD & TAPE', '', '', 0),
+(38, 'HDL-SORT', 'SORT', '', '', 0),
+(39, 'HDL-MAKE-SET', 'MAKE SET', '', '', 0),
+(40, 'HDL-REPACK', 'REPACK', '', '', 0),
+(41, 'HDL-RMVSTRAPS', 'STICKER MATERIAL', '', '', 0),
+(42, 'HDL-CART-xx', 'NEW CARTONS USED', '', '', 0),
+(43, 'HDL-SHRINKPALL', 'SHRINKWRAP + PALLET', '', '', 0),
+(44, 'HDL-BOX-PATCH', 'BOX PATCHED', '', '', 0),
+(45, 'HDL-SYS-KEY', 'CUSTOMER SYSTEM KEYING', '', '', 0),
+(46, 'HDL-RUSH', 'HANDELING RUSH', 'woHRush', 'wo', 1),
+(47, 'HDL-SPEC', 'HANDELING SPECIAL', 'woHSpec', 'wo', 1),
+(48, 'LBR-PHYSCOUNT', 'LABOR / PHYS COUNT', '', '', 0),
+(49, 'LBR-CLERICAL', 'LABOUR CLERICAL', '', '', 0),
+(50, 'ORD-STND', 'STANDARD ORDER PROCESSING', '', '', 0),
+(51, 'ORD-RUSH', 'RUSH ORDER PROCESSING', '', '', 0),
+(52, 'ORD-SPEC', 'SPECIAL ORDER PROCESSING', '', '', 0),
+(53, 'LBL-MARKCARTON', 'MARK CARTON', '', '', 0),
+(54, 'LBL-SHIP', 'SHIPPING LABEL', '', '', 0),
+(55, 'LBL-UCC128', 'UCC128 LABEL', '', '', 0),
+(56, 'LBL-CARRMNL', 'CARRIER LABEL MANUAL', '', '', 0),
+(57, 'LBL-CARTCONT', 'CARTON CONTENTS LABEL', '', '', 0),
+(58, 'LBL-PALLET', 'PALLET LABEL', '', '', 0),
+(59, 'LBL-RBL', 'REMOVE LABEL', '', '', 0),
+(60, 'LBL-BAR', 'BARCODE & SKU LABEL', '', '', 0),
+(61, 'LBL-LOT', 'LOT NUMBER LABEL', '', '', 0),
+(62, 'SHP-INVOICE', 'PRINT INVOICE', '', '', 0),
+(63, 'SHP-BOL', 'CREATE BOL', '', '', 0),
+(64, 'SHP-BOX-VOL', 'CARTON OUT VOLUME', '', '', 0),
+(65, 'SHP-BOX', 'CARTON OUT', '', '', 0),
+(66, 'SHP-INVOICE-VALUE', 'INVOICE VALUE', '', '', 0),
+(67, 'SHP-FREIGHT', 'SHIPPING FREIGHT', 'oprcShFrei', 'oprc', 1),
+(68, 'STOR-PALLRACK', 'STORAGE PALLET RACKED', '', '', 0),
+(69, 'STOR-PALLSTACK', 'STORAGE PALLET FLOOR', '', '', 0),
+(70, 'STOR-CART', 'STORAGE CARTON', 'storCart', 'stor', 1),
+(71, 'STOR-EACH', 'STORAGE EACHES', 'storEach', 'stor', 1),
+(72, 'STOR-VOL', 'STORAGE VOLUME', 'storVol', 'stor', 1),
+(73, 'REC-LABOUR', 'RECEIVING LABOR / PHYS COUNT', 'recLabour', 'rec', 1),
+(74, 'REC-OT', 'RECEIVING OVER TIME', 'recOR', 'rec', 1),
+(75, 'REC-QC', 'RECEIVING QC', 'recOR', 'rec', 1),
+(76, 'HDL-LABOUR', 'HANDELING LABOR / PHYS COUNT', 'woHLabour', 'wo', 1),
+(77, 'HDL-QC', 'HANDELING QC', 'woHQC', 'wo', 1),
+(78, 'HDL-OT', 'HANDELING OVER TIME', 'woHOTime', 'wo', 1),
+(79, 'HDL-UNIT-PRCSS', 'HANDELING UNITS PROCESSED', 'woHUProc', 'wo', 1),
+(80, 'HDL-MAKE SETS', 'HANDELING MAKE SETS', 'woHMSets', 'wo', 1),
+(81, 'HDL-SORTED', 'HANDELING SORTED', 'woHSort', 'wo', 1),
+(82, 'HDL-REPACK', 'HANDELING REPACK', 'woHRep', 'wo', 1),
+(83, 'HDL-PICK PACK', 'HANDELING PICK PACK', 'woPPack', 'wo', 1),
+(84, 'HDL-RMV-APLY-HNGRS', 'HANDELING REMOVE AND APPLY HANGERS', 'woHRAH', 'wo', 1),
+(85, 'HDL-APLY-HNGRS', 'HANDELING APPLY HANGERS', 'woHApHng', 'wo', 1),
+(86, 'HDL-RMV-HNGRS', 'HANDELING REMOVE HANGERS', 'woHRmHng', 'wo', 1),
+(87, 'HDL-HNGRS-MATER', 'HANDELING HANGERS MATERIAL', 'woHHngMt', 'wo', 1),
+(88, 'HDL-RMV-APLY-SIZERS', 'HANDELING REMOVE AND APPLY SIZER', 'woHRmApSz', 'wo', 1),
+(89, 'HDL-APLY-SIZERS', 'HANDELING APPLY SIZER', 'woHApSz', 'wo', 1),
+(90, 'HDL-RMV-SIZERS', 'HANDELING REMOVE SIZER', 'woHRmSz', 'wo', 1),
+(91, 'HDL-SIZERS-MATER', 'HANDELING  SIZER MATERIAL', 'woHSzMt', 'wo', 1),
+(92, 'HDL-RMV-APLY-STKR', 'HANDELING REMOVE AND APPLY STICKER', 'woHRmApSt', 'wo', 1),
+(93, 'HDL-APLY-STKR', 'HANDELING APPLY STICKER', 'woHApSt', 'wo', 1),
+(94, 'HDL-RMV-STKR', 'HANDELING REMOVE STICKER', 'woHRmSt', 'wo', 1),
+(95, 'HDL-STKR-MATER', 'HANDELING  STICKER MATERIAL', 'woHStMt', 'wo', 1),
+(96, 'HDL-RMV-APLY-PRC-TKT', 'HANDELING REMOVE AND APPLY PRICE TICKET', 'woHRmPT', 'wo', 1),
+(97, 'HDL-APLY-PRC-TKT', 'HANDELING APPLY PRICE TICKET', 'woHApPT', 'wo', 1),
+(98, 'HDL-RMV-PRC-TKT', 'HANDELING REMOVE PRICE TICKET', 'woHRmApPT', 'wo', 1),
+(99, 'HDL-RMV-APLY-PRC-TKT-SIZ', 'HANDELING REMOVE AND APPLY PRICE TICKET SIZE/COLOR', 'woHRmApPTS', 'wo', 1),
+(100, 'HDL-APLY-PRC-TKT-SIZ', 'HANDELING APPLY PRICE TICKET SIZE/COLOR/STYLE', 'woHApPTS', 'wo', 1),
+(101, 'HDL-RMV-PRC-TKT-SIZ', 'HANDELING REMOVE PRICE TICKET SIZE/COLOR/STYLE', 'woHRmPTS', 'wo', 1),
+(102, 'HDL-PRC-TKT-SIZ-MATER', 'HANDELING  PRICE TICKET MATERIAL', 'woHPTSMt', 'wo', 1),
+(103, 'HDL-FOLD', 'HANDELING FOLD GARNMENT', 'woHFold', 'wo', 1),
+(104, 'HDL-CUT-SEW', 'HANDELING CUT AND SEW', 'woHCutSew', 'wo', 1),
+(105, 'HDL-RMV-APLY-BAG', 'HANDELING REMOVE AND APPLY BAG', 'woHRmApBag', 'wo', 1),
+(106, 'HDL-APLY-BAG', 'HANDELING APPLY BAG', 'woHApBag', 'wo', 1),
+(107, 'HDL-RMV-BAG', 'HANDELING REMOVE BAG', 'woHRmBag', 'wo', 1),
+(108, 'HDL-BAG-MATER', 'HANDELING  BAG MATERIAL', 'woHBagMt', 'wo', 1),
+(109, 'HDL-CARTON-MATER', 'HANDELING  CARTON MATERIAL', 'woHCrtMt', 'wo', 1),
+(110, 'HDL-CNT-LABEL', 'HANDELING CARTON CONTENT LABEL', 'woHCLabel', 'wo', 1),
+(111, 'HDL-CNT-MARKD', 'HANDELING CARTON MARKED BY HAND', 'woHCMark', 'wo', 1),
+(112, 'HDL-STFG-TYP1', 'HANDELING STUFFING TYPE 1', 'woHSType1', 'wo', 1),
+(113, 'HDL-STFG-TYP2', 'HANDELING STUFFING TYPE 2', 'woHSType2', 'wo', 1),
+(114, 'HDL-STFG-TYP3', 'HANDELING STUFFING TYPE 3', 'woHSType3', 'wo', 1),
+(115, 'HDL-STFG-TYP4', 'HANDELING STUFFING TYPE 4', 'woHSType4', 'wo', 1),
+(116, 'HDL-STFG-TYP5', 'HANDELING STUFFING TYPE 5', 'woHSType5', 'wo', 1),
+(117, 'HDL-CARTON-PRNT-APLY', 'HANDELING PRINT AND APPLY LABEL', 'woHPrApLbl', 'wo', 1),
+(118, 'HDL-APLY-LABL', 'HANDELING APPLY CLIENT LABEL', 'woHApLbl', 'wo', 1),
+(119, 'HDL-RMV-CART-LABL', 'HANDELING REMOVE CARTON LABEL', 'woHRmCLbl', 'wo', 1),
+(120, 'HDL-BLNK-LBL-MATER', 'HANDELING  BLANK LABEL MATERIAL', 'woHBLblMt', 'wo', 1),
+(121, 'SHP-PIC-PLT', 'SHIPPING PALLET PICK', 'oprcSPltP', 'oprc', 1),
+(122, 'SHP-PIC-CARTON', 'SHIPPING CARTON PICK', 'oprcSCrtP', 'oprc', 1),
+(123, 'SHP-PICK PACK', 'SHIPPING PICK PACK', 'oprcSPPack', 'oprc', 1),
+(124, 'SHP-SPC', 'SHIPPING SPECIAL', 'oprcSSpec', 'oprc', 1),
+(125, 'SHP-OT', 'SHIPPING OVER TIME', 'oprcSOTime', 'oprc', 1),
+(126, 'SHP-LABOUR', 'SHIPPING LABOR / PHYS COUNT', 'oprcSLabou', 'oprc', 1),
+(127, 'SHP-QC', 'SHIPPING QC', 'oprcSQC', 'oprc', 1),
+(128, 'SHP-ORD-ONLINE', 'SHIPPING STANDARD ONLINE ORDER', 'oprcSOOnli', 'oprc', 1),
+(129, 'SHP-ORD-STND', 'SHIPPING STANDARD ORDER PROCESSING', 'oprcSOStnd', 'oprc', 1),
+(130, 'SHP-ORD-RUSH', 'SHIPPING RUSH ORDER PROCESSING', 'oprcSORush', 'oprc', 1),
+(131, 'SHP-ORD-SUPER-RUSH', 'SHIPPING SUPER RUSH ORDER PROCESSING', 'oprcSOSRus', 'oprc', 1),
+(132, 'SHP-ORD-SPEC', 'SHIPPING SPECIAL ORDER PROCESSING', 'oprcSOSpec', 'oprc', 1),
+(133, 'SHP-LABEL', 'SHIPPING LABEL', 'oprcSLabel', 'oprc', 1),
+(134, 'SHP-UCC128', 'SHIPPING UCC128 LABEL', 'oprcSUCC12', 'oprc', 1),
+(135, 'SHP-UPS/FEDEX', 'SHIPPING UPS/FEDEX LABEL', 'oprcSUPSFd', 'oprc', 1),
+(136, 'SHP-UNIT', 'SHIPPING UNIT OUT', 'oprcSUnOut', 'oprc', 1),
+(137, 'SHP-VAT', 'SHIPPING VAT', 'oprcSVAT', 'oprc', 1),
+(138, 'STOR-PALLET', 'STORAGE PALLET', 'storPallet', 'stor', 1),
+(139, 'UNIT-COST', 'UNIT-COST', 'oprcUnCost', 'oprc', 1),
+(140, 'TOTAL-SAMPLE-COST', 'TOTAL SAMPLE COST', 'oprcTSCost', 'oprc', 1),
+(141, 'TOTAL-PALLET-COST', 'TOTAL PALLET COST', 'oprcTPCost', 'oprc', 1),
+(142, 'TOTAL-BOL-COST', 'TOTAL BOL COST', 'oprcTBOLCo', 'oprc', 1);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `refs`
+--
+ALTER TABLE `refs`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `refs`
+--
+ALTER TABLE `refs`
+MODIFY `id` int(8) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=143;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

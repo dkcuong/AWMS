@@ -1,0 +1,31 @@
+.day0 {
+    background-color: #AABBFF !important;
+}
+
+.day1 {
+    background-color: #66AAFF !important;
+}
+
+.day2 {
+    background-color: #6688BB !important;
+}
+
+.day3 {
+    background-color: #82C9EE !important;
+}
+
+.day4 {
+    background-color: #B6D9F5 !important;
+}
+
+.day5 {
+    background-color: #AACCCC !important;
+}
+
+.day6 {
+    background-color: #8899DD !important;
+}
+
+.reportDate {
+    margin: 5px;
+}

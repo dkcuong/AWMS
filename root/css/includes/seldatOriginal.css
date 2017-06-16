@@ -1,0 +1,8 @@
+.seldatOriginal,
+#seldatOriginal {
+    width: 100% !important;
+}
+
+.successMessage {
+    display: inline-block;
+}

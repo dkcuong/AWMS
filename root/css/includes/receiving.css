@@ -1,0 +1,225 @@
+@media screen {
+    .printOnly {
+        display: none;
+    }
+}
+
+@media print {
+
+    .dontPrint,
+    #sheetPage,
+    #printButton {
+        display: none;
+    }
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .printOnly {
+        display: inline-block;
+    }
+}
+
+@page {
+    size: landscape;
+}
+
+.rcLogs {
+    margin-top: 20px;
+    height: 100%;
+    page-break-after: always;
+}
+
+
+.laterButtons {
+    display:none;
+}
+
+#sheetPage .printDisplay {
+    display: none;
+}
+
+
+#locationDisplay {
+    display: inline-block;
+    border: none;
+}
+
+.inches {
+    -moz-transform: rotate(270deg);
+    -moz-transform-origin: 50% 50%;
+    -webkit-transform: rotate(270deg);
+    -webkit-transform-origin: 50% 50%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.rcLogs {
+    width: 100%;
+}
+
+table.rcLogs,
+table.rcLogs td,
+table.rcLogs th {
+    text-align: center;
+    border-spacing: 0;
+    font-size: 11px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table.rcLogs td,
+table.rcLogs th {
+    padding: 2px;
+}
+
+.locInputs,
+.cartonCount {
+    display: none;
+}
+
+/* Page break after each pallet tally sheet*/
+html table.rcLogs,
+html div.sheetCopies {
+    margin-bottom: 10px;
+}
+
+.style {
+    width: 10%;
+}
+.sku {
+    width: 15%;
+}
+
+.lineNumbers,
+.inchesCell {
+    width: 1%;
+}
+
+.uoms,
+.sizes,
+.initialCount {
+    width: 5%;
+}
+
+.dimLetters {
+    width: 4%;
+}
+
+.cartonTitle,
+.locationCell,
+.totalCartons {
+    white-space: nowrap;
+}
+
+.cartonCount,
+.locInputs {
+    border: none;
+    font-size: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+#enterCotnainer {
+    color: #c00;
+}
+
+table.rcLogs td.upc {
+    font-size: 10px;
+}
+
+#receivingForm {
+    padding: 2px;
+    background-color: #fbfbfb;
+    border: 1px #aaa solid;
+    width: 100%;
+}
+
+.red {
+    color: red;
+}
+
+.submitUpdate {
+    text-align: right;
+    margin-top: 20px;
+}
+
+#receivingContainer {
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+#receivingContainer,
+#receivingContainer td {
+    border: 1px solid #000000;
+}
+
+#receivingContainer td {
+    padding: 5px;
+    color: #000;
+    line-height: 1.35em;
+}
+
+.notification {
+    border: 1px solid rgb(200,150,150);
+    margin: 0 auto;
+    margin-top: 25px;
+    background: #ffd8d8;
+    background: -moz-linear-gradient(top, #ffd8d8 0%, #ffbaba 75%);
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0%,#ffd8d8), color-stop(75%,#ffbaba ));
+    background: -webkit-linear-gradient(top, #ffd8d8 0%,#ffbaba 75%);
+    background: -o-linear-gradient(top, #ffd8d8 0%,#ffbaba 75%);
+    background: -ms-linear-gradient(top, #ffd8d8 0%,#ffbaba 75%);
+    background: linear-gradient(to bottom, #ffd8d8 0%,#ffbaba 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd8d8', endColorstr='#ffbaba ',GradientType=0 );
+    box-shadow: 7px 7px 5px #888888;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+    color: #700;
+    line-height: 1.35em;
+}
+
+#form-update {
+    margin-bottom: 20px;
+}
+
+.successMessage {
+    display: inline-block;
+}
+
+#approved {
+    margin: 0 auto;
+    margin-top: 25px;
+    background: #e9ffe9;
+    background: -moz-linear-gradient(top, #e9ffe9 0%, #cfc 75%);
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0%,#e9ffe9), color-stop(75%,#cfc ));
+    background: -webkit-linear-gradient(top, #e9ffe9 0%,#cfc 75%);
+    background: -o-linear-gradient(top, #e9ffe9 0%,#cfc 75%);
+    background: -ms-linear-gradient(top, #e9ffe9 0%,#cfc 75%);
+    background: linear-gradient(to bottom, #e9ffe9 0%,#cfc 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9ffe9', endColorstr='#cfc ',GradientType=0 );
+    box-shadow: 7px 7px 5px #888888;
+}
+
+#approved, #approved td {
+    border: 1px solid rgb(150,200,150);
+}
+
+#approved td {
+    padding: 5px;
+    color: #070;
+    line-height: 1.35em;
+}
+
+#laborDiv {
+    margin: 10px 0;
+    display: none;
+}
+
+#labor {
+    text-align: right;
+}

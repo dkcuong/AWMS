@@ -1,0 +1,115 @@
+th,
+td {
+    white-space: nowrap;
+}
+
+.successMessage {
+    display: inline-block;
+}
+
+#newUPCHeader {
+    font-weight: bold;
+}
+
+#infoIcon {
+    display: inline-block;
+}
+
+.newUPCCell {
+    text-align: center;
+}
+
+#upcCreated,
+#dialog-form {
+    display: none;
+}
+
+#createUPC,
+.newUPCMessage {
+    margin: 0.75em 0;
+}
+
+.dynamicDT {
+    margin: 0;
+    padding: 0;
+}
+
+.selectUPC {
+    color: blue;
+    cursor: pointer;
+}
+
+.vendorSize {
+    width: 180px;
+}
+
+.message {
+    color: rgb(20, 70, 146);
+}
+
+.red {
+    color: #b00;
+}
+
+.firstCol {
+    text-align: right;
+}
+
+#scanContainerTable tr.oddRows,
+#scanContainerTable tr.oddRows input[type=text] {
+    background-color: #f3f3f3;
+}
+
+#scanContainerTable td {
+    border-color: #ccc #999;
+    padding: 2px 4px;
+}
+
+#scanContainerTable {
+    border: 1px #999 solid;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#scanContainerTable input[type=text] {
+    border: none;
+}
+
+#containerInfo input,
+#containerInfo select {
+    margin: 0 15px 0 3px;
+}
+
+#containerInfo {
+    padding: 2px;
+    background-color: #fbfbfb;
+    border: 1px #aaa solid;
+}
+
+.unitDimensions,
+.unitWeight {
+    color: green;
+    font-weight: bold;
+}
+
+.fifthMarked {
+    border-bottom: 2px solid blue;
+}
+
+input[rel=short] {
+    width: 49px;
+}
+
+input[type=button].insertRowButtons,
+input[type=button].removeRowButtons {
+    color: blue;
+    background-color: transparent;
+    border: none;
+    margin: auto;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#client-name, #reference-number {
+    padding-left: 3px;
+}
