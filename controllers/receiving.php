@@ -155,6 +155,7 @@ class controller extends template
 
     function displayReceivingController()
     {
+        die("dafdas");
         $table = new \tables\receiving($this);
 
         $ajax = new datatables\ajax($this);
